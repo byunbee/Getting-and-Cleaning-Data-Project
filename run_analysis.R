@@ -64,23 +64,33 @@ col.tidy.data <- gsub("[(|)]", "", col.tidy.data)
 colnames(tidy.data) <- col.tidy.data
 
 #5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-## subject id
+
 library(plyr)
+#variables' means by two groups, subjects and activities
+
+## the means of variables by subject_id
 ddply(tidy.data, .(subject_id), colwise(mean))
+
+## the means of variables by act_id (activity types)
 ddply(tidy.data, .(act_type), colwise(mean))
 
+## preparation for combining the means of variables by the two groups
+### by subject_id
 dd1<-ddply(tidy.data, .(subject_id), colwise(mean))
 dd1$act_id <-NULL #remove act_id column
 names(dd1)[1] <- "id" #rename first column with "id"
 dd1.subject <- cbind(type="subject", dd1) #add the type column
 
+### by act_id
 dd2<-ddply(tidy.data, .(act_id), colwise(mean))
 dd2$subject_id <- NULL #remove subject_id column
 names(dd2)[1] <-"id" #rename first column with "id"
 dd2.active <- cbind(type="activity", dd2) #add the type column
 
+##combining
 tidy.data.avg <- rbind(dd1.subject, dd2.active)
 tidy.data.avg$act_type <- NULL
+
 
 write.table(tidy.data.avg, "./tidy_data_avg.txt", row.names=F, sep="\t") 
 
