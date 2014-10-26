@@ -4,6 +4,8 @@
 
  Raw dataset | Tidy dataset
  ------------|--------------
+|`Type`
+|`ID`
 `tBodyAcc-mean()-X`	|	`Time_Body_Accelerometer_Mean_X`
 `tBodyAcc-mean()-Y`	|	`Time_Body_Accelerometer_Mean_Y`
 `tBodyAcc-mean()-Z`	|	`Time_Body_Accelerometer_Mean_Z`
@@ -85,6 +87,17 @@
 `fBodyBodyGyroJerkMag-meanFreq()`	|	`Freq_Body_Gyroscope_JerkMag_MeanFreq`
 
 ##
+- Type: Subject or Activity
+- ID (integer)
+    When type = subject: Subject ID number
+    when type = activity:
+        1 WALKING
+        2 WALKING_UPSTAIRS
+        3 WALKING_DOWNSTAIRS
+        4 SITTING
+        5 STANDING
+        6 LAYING
 - Mean = average value
 - Std. = standard devidation
 - Freq = frequency
+- MeanFreq: Weighted average of the frequency components to obtain a mean frequency
