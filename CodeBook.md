@@ -89,6 +89,7 @@
 ##
 - Type: Subject or Activity
 - ID (integer)
+-  when type
     When type = subject: Subject ID number
     when type = activity:
         1 WALKING
