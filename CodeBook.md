@@ -4,8 +4,8 @@
 
  Raw dataset | Tidy dataset
  ------------|--------------
-|`Type`
-|`ID`
+``|`Type`
+``|`ID`
 `tBodyAcc-mean()-X`	|	`Time_Body_Accelerometer_Mean_X`
 `tBodyAcc-mean()-Y`	|	`Time_Body_Accelerometer_Mean_Y`
 `tBodyAcc-mean()-Z`	|	`Time_Body_Accelerometer_Mean_Z`
