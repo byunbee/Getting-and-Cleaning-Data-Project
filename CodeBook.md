@@ -84,3 +84,5 @@
 `fBodyBodyGyroJerkMag-std()`	|	`Freq_Body_Gyroscope_JerkMag_Std.`
 `fBodyBodyGyroJerkMag-meanFreq()`	|	`Freq_Body_Gyroscope_JerkMag_MeanFreq`
 
+*mean = average value
+*std = standard devidation
