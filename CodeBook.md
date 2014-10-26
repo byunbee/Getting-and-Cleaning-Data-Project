@@ -85,6 +85,6 @@
 `fBodyBodyGyroJerkMag-meanFreq()`	|	`Freq_Body_Gyroscope_JerkMag_MeanFreq`
 
 ##
--Mean = average value
--Std. = standard devidation
--Freq = frequency
+- Mean = average value
+- Std. = standard devidation
+- Freq = frequency
