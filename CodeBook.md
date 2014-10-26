@@ -89,9 +89,8 @@
 ##
 - Type: Subject or Activity
 - ID (integer)
--  when type
-    When type = subject: Subject ID number
-    when type = activity:
+-- When type = subject: Subject ID number
+-- When type = activity:
         1 WALKING
         2 WALKING_UPSTAIRS
         3 WALKING_DOWNSTAIRS
